@@ -5,12 +5,30 @@
   height: 100vh;
   
 }
+.color-light{
+  color: #222222;
+}
+.color-dark{
+  color: #eee;
+}
+.color-dark:focus{
+  color: #eee;
+}
 .appBg-light{
   background-color: rgb(255, 255, 255);
 }
 .appBg-dark{
   background-color: #22262a;
 }
+
+/* color pattern  */
+.bg-red{
+  background-color: red;
+}
+
+
+
+
 .custom-switch .custom-control-label::before {
   left: -2.25rem;
   width: 1.75rem;

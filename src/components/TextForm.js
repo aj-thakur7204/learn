@@ -27,14 +27,14 @@ export default function Textform (props){
             <div className={`container mt-2`}  >  
                 <form>
                     <div className="form-group">
-                        <h3 className={`navbar-${props.themeMode} `}>Analyse here text</h3>
-                        <textarea className={`form-control`} onChange={onChangeText} value={textarea} id="Textarea" rows="8"></textarea>
+                        <h3 className={`color-${props.themeMode} `}>Analyse here text22</h3>
+                        <textarea className={`form-control bg-${props.themeMode} color-${props.themeMode}`} onChange={onChangeText} value={textarea} id="Textarea" rows="8"></textarea>
                     </div>
                 </form>
                 <button type="button" onClick={onClickUppercase} className="btn btn-primary">Uppercase</button>
                 <button type="button" onClick={onClickLowercase} className="btn btn-primary mx-2">Lowecase</button> 
                 
-                <div className="jumbotron">
+                <div className={`jumbotron mt-5 bg-${props.themeMode} color-${props.themeMode}`}>
                     <h1 className="display-4">Preview your text</h1>
                     
                     <hr className="my-4" />

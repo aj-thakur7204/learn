@@ -6,7 +6,7 @@ import PropTypes from 'prop-types';
 export default function Navbar(props){
     return(
         <>
-            <nav className={`navbar navbar-expand-lg navbar-${props.themeMode} bg-${props.themeMode}`}>
+            <nav className={`navbar navbar-expand-lg navbar-dark bg-dark `}>
                 <div className="container-fluid">
                     <a className="navbar-brand" href="/">  {props.brand} </a>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -23,7 +23,12 @@ export default function Navbar(props){
                     </ul>
                    
                     </div>
-                    <input className='aj-input' onClick={props.switchToggle} type="checkbox" id="switch" />
+                    <div className={`color-pattern`}>
+                        <button type="button" className={`btn btn-primary`} onClick={() => {props.colorModeFun('primary')}} >Primary</button>
+                        <button type="button" className={`btn btn-danger`} onClick={() => {props.colorModeFun('danger')}} >Danger</button>
+                        <button type="button" className={`btn btn-warning`} onClick={() => {props.colorModeFun('warning')}} >warning</button>
+                    </div>
+                    {/* <input className='aj-input' onClick={props.switchToggle} type="checkbox" id="switch" /> */}
                     <label className='aj-label' htmlFor="switch">Toggle</label>
                 </div>
             </nav>
